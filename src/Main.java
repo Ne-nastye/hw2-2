@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        int x = 100; // начальный баланс денежных средств на телефоне
-        int y = 500; // сумма пополнения
-        int z = x + y; // итоговый баланс денежных средств на телефоне
-        int bonus = y / 100 * 10; // бонус при пополнении на сумму от 500р и более
-        if (y >= 500)
-            System.out.println("Итоговый баланс счета: " + (z + bonus));
+        int balance = 100; // начальный баланс денежных средств на телефоне
+        int drop = 400; // сумма пополнения
+        int totalbalance = balance + drop; // итоговый баланс денежных средств на телефоне
+        int bonus = drop / 100 * 10; // бонус при пополнении на сумму от 500р и более
+        if (drop >= 500)
+            System.out.println("Итоговый баланс счета: " + (totalbalance + bonus));
         else {
-            System.out.println("Итоговый баланс счета: " + z);
+            System.out.println("Итоговый баланс счета: " + totalbalance);
         }
-        if (y >= 500)
-        System.out.println("Бонусы: " + bonus);
+        if (drop >= 500)
+            System.out.println("Бонусы: " + bonus);
     }
 }
