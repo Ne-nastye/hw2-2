@@ -5,12 +5,12 @@ public class Main {
         int drop = 400; // сумма пополнения
         int totalbalance = balance + drop; // итоговый баланс денежных средств на телефоне
         int bonus = drop / 100 * 10; // бонус при пополнении на сумму от 500р и более
-        if (drop >= 500)
+        if (drop >= 500) {
             System.out.println("Итоговый баланс счета: " + (totalbalance + bonus));
-        else {
+        } else {
             System.out.println("Итоговый баланс счета: " + totalbalance);
         }
-        if (drop >= 500)
+        if (drop >= 500) {
             System.out.println("Бонусы: " + bonus);
+        }
     }
-}
